@@ -5,7 +5,7 @@ maybe(
     git_repository,
     name = "com_github_3rdparty_bazel_rules_arrow",
     remote = "https://github.com/3rdparty/bazel-rules-arrow",
-    commit = "7136f6d0100f45af41cc9fc099d31a2a6601419c",
+    commit = "d8c3b4f8e1d44d52cb1dc2a0fb23cbcf5237ee8c",
     shallow_since = "",
 )
 
