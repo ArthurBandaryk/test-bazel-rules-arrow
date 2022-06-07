@@ -1,0 +1,16 @@
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+load("@bazel_tools//tools/build_defs/repo:utils.bzl", "maybe")
+
+maybe(
+    git_repository,
+    name = "com_github_3rdparty_bazel_rules_arrow",
+    remote = "https://github.com/3rdparty/bazel-rules-arrow",
+    commit = "7136f6d0100f45af41cc9fc099d31a2a6601419c",
+    shallow_since = "",
+)
+
+load("@com_github_3rdparty_bazel_rules_arrow//bazel:repos.bzl", arrow_repos = "repos")
+arrow_repos()
+
+load("@com_github_3rdparty_bazel_rules_arrow//bazel:deps.bzl", arrow_deps = "deps")
+arrow_deps()
